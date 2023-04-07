@@ -6,7 +6,7 @@ const gridContainer = document.querySelector('.grid-container')
 // grid
 // IDEA: use a loop to generate a single box in the grid, and set the stop condition in the
 // loop to whatever the inputted number is from the button
-let answer = 16;
+let answer = 45;
 
 
 function createGrid() {
@@ -19,8 +19,14 @@ function createBox() {
         const box = document.createElement('div');
         box.classList.add('box');
         gridContainer.appendChild(box);
-        box.style.border = '2px limegreen'
+        // box.style.border = '2px limegreen'
     }
+
+    const boxes = document.querySelectorAll('box')
+    boxes.forEach((box) => {
+        box.style.border = '2px limegreen'
+        console.log('done')
+    })
     
 }
 
