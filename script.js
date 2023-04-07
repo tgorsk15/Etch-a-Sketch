@@ -1,6 +1,6 @@
 // grid reference
-gridContainer = document.querySelector('.grid-contianer')
-// const box = document.createElement('box')
+const gridContainer = document.querySelector('.grid-container')
+// const box = document.createElement('div')
 
 
 // grid
@@ -16,10 +16,12 @@ function createGrid() {
 //Box generator function
 function createBox() {
     for (i = 0; i < answer; i++) {
-        const box = document.createElement('box')
-        gridContainer.appendChild('box')
+        const box = document.createElement('div');
+        box.classList.add('box');
+        gridContainer.appendChild(box);
+        box.style.border = '2px limegreen'
     }
-    console.log(answer)
+    
 }
 
 

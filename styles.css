@@ -1,0 +1,12 @@
+.grid-container {
+    display: table;
+    width: auto;
+    height: auto;
+}
+
+.box {
+    display: flex;
+    width: auto;
+    height: auto;
+    border: 2px limegreen;
+}
