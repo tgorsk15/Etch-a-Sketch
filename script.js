@@ -9,8 +9,13 @@ const gridContainer = document.querySelector('.grid-container')
 let answer = 16;
 
 
+// act of creating boxes within each row
 function createBoxes() {
-    // act of creating boxes within each row
+    // for (i = 0; i <answer; i++) {
+    //     const box = document.createElement('div')
+    //     box.classList.add('box')
+    //     row.appendChild(box)
+    // }
 }
 
 //Box generator function
@@ -19,7 +24,13 @@ function createRow() {
         const row = document.createElement('div');
         row.classList.add('row');
         gridContainer.appendChild(row);
-        // createBoxes()
+
+        for (j = 0; j <answer; j++) {
+            const box = document.createElement('div');
+            box.classList.add('box');
+            row.appendChild(box);
+            
+        }
 
     }
 
