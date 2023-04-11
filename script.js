@@ -6,20 +6,15 @@ const gridContainer = document.querySelector('.grid-container')
 // grid
 // IDEA: use a loop to generate a single box in the grid, and set the stop condition in the
 // loop to whatever the inputted number is from the button
-let answer = 16;
+let answer;
 
 
 // act of creating boxes within each row
 function createBoxes() {
-    // for (i = 0; i <answer; i++) {
-    //     const box = document.createElement('div')
-    //     box.classList.add('box')
-    //     row.appendChild(box)
-    // }
 }
 
 //Box generator function
-function createRow() {
+function createGrid() {
     for (i = 0; i < answer; i++) {
         const row = document.createElement('div');
         row.classList.add('row');
@@ -34,9 +29,7 @@ function createRow() {
 
     }
 
-    // for (i = 0; i < answer; i++) {
-    //     const box = document.createElement('div');
-    //     box.classList.add('box');
+
 
     // }
 
@@ -51,19 +44,23 @@ function createRow() {
 
 
 // grid generator button
+// PROBLEM: button doesn't create a new grid after inputting a second answer
+// ... turns out it is adding a new grid to the bottom of the old ... need to
+// delete the inital one
 const generateButton = document.querySelector('.grid-button')
 generateButton.addEventListener('click', () => {
+    // *NEED to probs insert deleteGrid() function here
     answer = prompt('How many sqaures tall and wide do you want your grid?  (MAX NUMBER: 100');
     if (answer < 101) {
-        createRow()
+        createGrid()
     } else {
         alert('This is not a valid answer');
         answer = prompt('How many sqaures tall and wide do you want your grid?');
-        createRow();
+        createGrid();
     }
     // createBox();
 })
 
-createRow()
+
 
 // Color change for mouse hover
