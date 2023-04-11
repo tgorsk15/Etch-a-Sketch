@@ -33,7 +33,9 @@ body {
 .top {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 3px dashed darkgreen;
+    gap: 70px;
     border-left: 0;
     border-right: 0;
 }
@@ -45,8 +47,16 @@ body {
     padding: 10px;
     width: 180px;
     height: 50px;
+    font-size: large;
+    font-weight: 525;
     border-radius: 50%;
-    border-color: rgb(112, 107, 148);
-    color: brown;
+    border: 4px rgb(80, 77, 107);
+    /* border-color: rgb(112, 107, 148); */
+    color: black;
     background-color: rgb(151, 144, 199);
+}
+
+h1 {
+    font-size: 40px;
+    
 }

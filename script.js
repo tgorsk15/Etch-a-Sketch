@@ -50,7 +50,7 @@ generateButton.addEventListener('click', () => {
     // *NEED to probs insert deleteGrid() function here
     deleteGrid();
     answer = prompt('How many sqaures tall and wide do you want your grid?  (MAX NUMBER: 100');
-    if (answer < 101) {
+    if (answer < 101 && answer > 0) {
         createGrid()
     } else {
         alert('This is not a valid answer');
