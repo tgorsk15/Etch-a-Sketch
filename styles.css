@@ -1,5 +1,5 @@
 body {
-    background-color: gainsboro;
+    background-color: rgb(195, 194, 194);
     border-color: 2px darkslategrey;
     
 } 
@@ -37,13 +37,16 @@ body {
 
 .top {
     display: flex;
+    background-color: rgb(195, 194, 194);
     height: 80px;
     justify-content: center;
     align-items: center;
     border: 3px dashed darkgreen;
+    box-shadow: 0 0 20px black;
     gap: 70px;
     border-left: 0;
     border-right: 0;
+    margin-bottom: 10px;
 }
 
 

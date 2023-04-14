@@ -42,6 +42,7 @@ function createGrid() {
     boxes.forEach(box => {
         box.addEventListener('mouseover', () => {
             box.style.backgroundColor = 'black';
+            box.style.boxShadow = '0 0 20px black';
         });
     });
 
