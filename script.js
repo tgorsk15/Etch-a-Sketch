@@ -38,6 +38,12 @@ function createGrid() {
 
     }
 
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach(function(box) {
+        box.addEventListener('mouseover', function() {
+            box.style.backgroundColor = 'black';
+        });
+    });
 }
 
 
@@ -63,14 +69,16 @@ generateButton.addEventListener('click', () => {
 
 
 // Color change (Event) for mouse hover
-const boxes = document.querySelectorAll('.box');
-console.log(boxes);
-boxes.forEach(box => {
-    box.addEventListener('mouseover', () => {
-        console.log(this)
-        this.style.backgroundColor = 'black';
-    });
-});
+
+
+
+// const boxes = document.querySelectorAll('.box');
+// console.log(boxes);
+// boxes.forEach(function(box) {
+//     box.addEventListener('mouseover', function() {
+//         box.style.backgroundColor = 'black';
+//     });
+// });
 
 
 // for (let h = 0; h < boxes.length; h++) {
