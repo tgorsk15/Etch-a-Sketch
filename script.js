@@ -37,13 +37,20 @@ function createGrid() {
         }
 
     }
-
+    // color change event for 'mouseover' event
     const boxes = document.querySelectorAll('.box');
-    boxes.forEach(function(box) {
-        box.addEventListener('mouseover', function() {
+    boxes.forEach(box => {
+        box.addEventListener('mouseover', () => {
             box.style.backgroundColor = 'black';
         });
     });
+
+    // const boxes = document.querySelectorAll('.box');
+    // boxes.forEach(function(box) {
+    //     box.addEventListener('mouseover', function() {
+    //         box.style.backgroundColor = 'black';
+    //     });
+    // });
 }
 
 
@@ -68,17 +75,7 @@ generateButton.addEventListener('click', () => {
 
 
 
-// Color change (Event) for mouse hover
-
-
-
-// const boxes = document.querySelectorAll('.box');
-// console.log(boxes);
-// boxes.forEach(function(box) {
-//     box.addEventListener('mouseover', function() {
-//         box.style.backgroundColor = 'black';
-//     });
-// });
+// Color change (Event) for mouse hover - failed attempts:
 
 
 // for (let h = 0; h < boxes.length; h++) {
@@ -88,7 +85,8 @@ generateButton.addEventListener('click', () => {
 // }
 
 
-// addEventListener does NOT work with an entire node list ... have to use the above loop^
+// **Didn't work, needed to mak the addEventListener occur repeatedly inside 
+// of the forEach()**
 // boxes.addEventListener('mouseover', () => {
 //     boxes.forEach(box => {
 //         box.style.background = 'black';
