@@ -71,7 +71,7 @@ generateButton.addEventListener('click', () => {
         answer = prompt('How many sqaures tall and wide do you want your grid?');
         createGrid();
     }
-})
+});
 
 
 
