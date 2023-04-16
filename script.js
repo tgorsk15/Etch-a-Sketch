@@ -1,5 +1,6 @@
 // grid reference
 const gridContainer = document.querySelector('.grid-container')
+gridContainer.style.boxShadow = '0 0 10px rgb(6, 86, 6)'
 // const box = document.createElement('div')
 
 
