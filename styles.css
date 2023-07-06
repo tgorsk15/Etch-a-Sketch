@@ -10,6 +10,11 @@ body {
     justify-content: center;
 }
 
+.top-text {
+   /* font-family: 'COUTUREBold', Roboto, sans-serif; */
+    letter-spacing: .3rem;
+}
+
  .grid-container {
     display: flex;
     flex-direction: column;
@@ -62,7 +67,7 @@ body {
 .grid-button {
     margin-top: 15px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 8px;
     width: 180px;
     height: 50px;
     font-size: large;
