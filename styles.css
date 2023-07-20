@@ -83,3 +83,13 @@ h1 {
     font-size: 40px;
     
 }
+
+/* test of combinator types  */
+/*.container > .grid-container {
+    background-color: red;
+} 
+
+
+.grid-container > div[class='row'] {
+    background-color: aqua;
+} */
